@@ -29,7 +29,8 @@ opcion = input('''Ingrese una opción para Jugar!
         
     > ''')
 # 1. validar opcion
-opcion = 
+#print(opcion)                               #agregado x mi
+opcion = validate(opcion)                   #agregado x mi despues de  =
 
 # 2. Definir el comportamiento de Salir
 if opcion == '0':
