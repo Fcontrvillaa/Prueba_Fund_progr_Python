@@ -7,7 +7,7 @@ def validate(opciones, eleccion):
         #print('Opción no válida, ingrese una de las opciones válidas: ')
         eleccion = input('Opción no válida, ingrese una de las opciones válidas: \n').lower()  
 
-    pass
+    
     
     ##########################################################################
     return eleccion
