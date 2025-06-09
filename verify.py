@@ -7,13 +7,18 @@ def verificar(alternativas, eleccion):
 
     # generar lógica para determinar respuestas correctas
     ##########################################################################################
-    pass
-    
-    
-    
-    
+
+    correcto = alternativas[eleccion][1] == 1
+    if correcto:
+        print('Respuesta Correcta')
+        return True # plantilla devuleve "correcto" linea 21, pero enunciado dice que devuelve True 
+    else:
+        print('Respuesta Incorrecta') 
+        return False
+         
+
     ##########################################################################################
-    return correcto
+    #return correcto
 
 
 
