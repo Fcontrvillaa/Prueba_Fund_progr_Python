@@ -5,7 +5,8 @@ def validate(opciones, eleccion):
     
     while eleccion not in opciones:  # Solicita opcion hasta que se ingrese una válida
         #print('Opción no válida, ingrese una de las opciones válidas: ')
-        eleccion = input('Opción no válida, ingrese una de las opciones válidas: \n').lower()  
+        
+        eleccion = input(f'Opción no válida, ingrese una de las opciones válidas: {opciones}\n').lower()  
 
     
     

@@ -4,7 +4,11 @@ def print_pregunta(enunciado, alternativas):
     
     # Imprimir enunciado y alternativas
     ###############################################################
-    pass
+    print(enunciado[0])
+    
+    for v, k in enumerate(alternativas):
+        letra = chr(ord('A')+v)  # ord() 'A' como base en acsii y despues B, C ...
+        print(f"{letra}. {k[0]}")
     
     
     

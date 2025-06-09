@@ -29,8 +29,8 @@ opcion = input('''Ingrese una opción para Jugar!
         
     > ''')
 # 1. validar opcion
-#print(opcion)                               #
-opcion = validate(opcion)                   #agregado x mi despues de  =
+#print(opcion)                               
+opcion = validate(['0', '1'], opcion)                   #agregado x mi despues de  =
 
 # 2. Definir el comportamiento de Salir
 if opcion == '0':
@@ -41,21 +41,24 @@ if opcion == '0':
     
 
 # Funcionamiento de preguntas
-while correcto and n_pregunta < 3*p_level:
+while correcto and n_pregunta < 3*p_level:   #mientras esté en rango de pregutas... n_pregunta < 3*p_level, n_pregunta es el c oonteo del total de preguntas
     
     if n_pregunta == 0:
         p_level = input('¿Cuántas preguntas por nivel? (Máximo 3): ')
         # 3. Validar el número de preguntas por nivel
-        p_level = validate(['1','2','3'], p_level )    ###valida preguntas. Alterntivas correctas 1, 2 y 3  agregado x mi
+        p_level = validate(['1','2','3'], p_level )    ###valida preguntas. Alterntivas correctas 1, 2 y 3  
         
     if continuar == 'y':
         #contador de preguntas
         n_pregunta += 1
         # 4. Escoger el nivel de la pregunta
-        nivel = 
+        nivel = choose_level(n_pregunta, p_level) #devuelve la dificultad (level)  basicas, intermedias o avanzadas
+        
         print(f'Pregunta {n_pregunta}:')
         # 5. Escoger el enunciado y las alternativas de una pregunta según el nivel escogido
-        enunciado, alternativas = 
+        enunciado, alternativas = p.pool_preguntas[nivel],
+
+
         #6. Imprimir el enunciado y sus alternativas en pantalla
         
         

@@ -4,10 +4,8 @@ import random
 def shuffle_alt(pregunta):
     #mezclar alternativas
     #######################################################################
-    pass
-    
-    
-    
+    random.shuffle(pregunta['alternativas'])
+  
     #######################################################################
     
     return pregunta['alternativas']
