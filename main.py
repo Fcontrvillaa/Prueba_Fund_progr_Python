@@ -45,15 +45,15 @@ if opcion == '0':
 while correcto and n_pregunta < 3*p_level:   #mientras esté en rango de pregutas... n_pregunta < 3*p_level, n_pregunta es el c oonteo del total de preguntas
     
     if n_pregunta == 0:
-        p_level = input('¿Cuántas preguntas por nivel? (Máximo 3): ')
+        p_level = int(input('¿Cuántas preguntas por nivel? (Máximo 3): '))
         # 3. Validar el número de preguntas por nivel
-        p_level = validate(['1','2','3'], p_level )    ###valida preguntas. Alterntivas correctas 1, 2 y 3  
+        p_level = validate([1,2,3], p_level )    ###valida preguntas. Alterntivas correctas 1, 2 y 3  
         
     if continuar == 'y':
         #contador de preguntas
         n_pregunta += 1
         # 4. Escoger el nivel de la pregunta
-        print(n_pregunta, p_level)
+        #print(n_pregunta, p_level)
         nivel = choose_level(n_pregunta, p_level) #devuelve la dificultad (level)  basicas, intermedias o avanzadas
         
         print(f'Pregunta {n_pregunta}:')
